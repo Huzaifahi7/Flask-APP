@@ -7,7 +7,7 @@ def publish_data(topic, data):
         del client
     except:
         pass
-    broker = "mqttdns.eastus.cloudapp.azure.com"
+    broker = "Your IP of the server"
     client = paho.Client()
     client.connect(broker)
     client.publish(topic, data)
